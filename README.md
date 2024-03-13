@@ -1,0 +1,2 @@
+# React-Flow
+A simple app displaying some task objects with a name and a sequence rendered using react flow depending on the sequence number with parent and child nodes. The app also allows draggability of the child noes to some other parent node with auto adjustment of sequence number.
