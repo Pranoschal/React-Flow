@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import FlowGraphWithProvider from "./components/FlowGraphWithProvider.tsx";
+import "./App.css";
 
+const DATA = [
+  {
+    task_name: "task1",
+    sequence: 1,
+  },
+  {
+    task_name: "task2",
+    sequence: 1,
+  },
+  {
+    task_name: "task3",
+    sequence: 2,
+  },
+  {
+    task_name: "task4",
+    sequence: 2,
+  },
+  {
+    task_name: "task5",
+    sequence: 2,
+  },
+  {
+    task_name: "task6",
+    sequence: 3,
+  },
+  {
+    task_name: "task7",
+    sequence: 4,
+  },
+  {
+    task_name: "task8",
+    sequence: 5,
+  },
+];
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FlowGraphWithProvider tasks={DATA} />
     </div>
   );
 }
